@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import messagebox
 
 mainWindow = tk.Tk()
 mainWindow.title("Calculator")
@@ -33,32 +34,50 @@ Result_Label.pack()
 
 
 def add():
-    first = int(First_Number_Value.get())
-    second = int(Second_Number_Value.get())
+    first, second = takeValueInput()
     result = first+second
     #print("result is" , result)
     Result_Label.config(text="OPERATION RESULT IS" + str(result))
 
 
 def sub():
-    first = int(First_Number_Value.get())
-    second = int(Second_Number_Value.get())
+    first, second = takeValueInput()
     result = first-second
     Result_Label.config(text="OPERATION RESULT IS" + str(result))
 
 
 def mul():
-    first = int(First_Number_Value.get())
-    second = int(Second_Number_Value.get())
+    first, second = takeValueInput()
     result = first*second
     Result_Label.config(text="OPERATION RESULT IS" + str(result))
 
 
 def divide():
-    first = int(First_Number_Value.get())
-    second = int(Second_Number_Value.get())
-    result= first/second
+    first, second = takeValueInput()
+    if second == 0:
+        messagebox.showerror("Error", "Cannot divide the value by 0.")
+    else:
+        result = first / second
+        # print(first + second)
+        result = round(result, 2)
     Result_Label.config(text="OPERATION RESULT IS" + str(result))
+
+
+def takeValueInput():
+    first = First_Number_Value.get()
+    second = Second_Number_Value.get()
+
+    try:
+        first = int(first)
+        second = int(second)
+
+        return first, second
+    except ValueError:
+        if ((len(First_Number_Value.get()) == 0) or (len(Second_Number_Value.get()) == 0)):
+            messagebox.showerror("Error", "Please enter a value")
+        else:
+            messagebox.showerror("Error", "Enter only integer value")
+        quit(0)
 
 
 mainWindow.mainloop()
