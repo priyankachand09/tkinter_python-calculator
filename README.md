@@ -1,22 +1,22 @@
 # tkinter_python-calculator
 
 # OUTPUT:ADDITION
-![alt text](https://github.com/priyankachand09/tkinter_python-calculator/blob/master/add.png)
+![alt text](https://priyankachand09.github.io/tkinter_python-calculator/add.png)
 
 # OUTPUT:SUBTRACTION
-![alt text](https://github.com/priyankachand09/tkinter_python-calculator/blob/master/sub.png)
+![alt text](https://priyankachand09.github.io/tkinter_python-calculator/sub.png)
 
 # OUTPUT:MULTIPLICATION
-![alt text](https://github.com/priyankachand09/tkinter_python-calculator/blob/master/mul.png)
+![alt text](https://priyankachand09.github.io/tkinter_python-calculator/mul.png)
 
 # OUTPUT:DIVISION
-![alt text](https://github.com/priyankachand09/tkinter_python-calculator/blob/master/divide.png)
+![alt text](https://priyankachand09.github.io/tkinter_python-calculator/divide.png)
 
 # OUTPUT:DIVISION EXCEPTION
-![alt text](https://github.com/priyankachand09/tkinter_python-calculator/blob/master/DivisionBy.png)
+![alt text](https://priyankachand09.github.io/tkinter_python-calculator/DivisionBy.png)
 
 # OUTPUT:ENTER A VALUE EXCEPTION
-![alt text](https://github.com/priyankachand09/tkinter_python-calculator/blob/master/enter_a_value.png)
+![alt text](https://priyankachand09.github.io/tkinter_python-calculator/enter_a_value.png)
 
 # OUTPUT:INTEGER VALUE EXCEPTION
-![alt text](https://github.com/priyankachand09/tkinter_python-calculator/blob/master/integer.png)
+![alt text](https://priyankachand09.github.io/tkinter_python-calculator/integer.png)
